@@ -35,6 +35,8 @@ services:
     ports:
       - 4566:4566
       - 4510-4559:4510-4559
+    environment:
+      - LOCALSTACK_ACKNOWLEDGE_ACCOUNT_REQUIREMENT=1
     networks:
       - nsse-network
 
